@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mobil Rentalan</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="./index.html" class="text-gray">Mobil Rentalan</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-item">
+                    <li class="nav-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./produk.html">Produk</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./php/bukutamu.php">Buku Tamu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://www.facebook.com/radya.indra.7"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/indraradhya/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/channel/UCpDleXg0XqNaPxomL2cQaLw"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- MAIN -->
+    <!-- site title -->
+    <main>
+        <section class="site-tittle">
+            <div class="site-background">
+                <h3>Tours & Travels</h3>
+                <h1>Best Rental Cars</h1>
+                <a href="./produk.html"><button class="btn">Explore</button></a>
+            </div>
+        </section>
+        <!-- carousel -->
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content">
+                            <img src="./image/layer_2__1634888236834__1635086863976.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Sedan</h3>
+                                <a href="./mobil/city.html"><button class="btn btn-blog">klik</button></a>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./image/typee__1613301134086.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Hatchback</h3>
+                                <a href="./mobil/brio.html"><button class="btn btn-blog">klik</button></a>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./image/venturer.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3>MPV</h3>
+                                <a href="./mobil/inova.html"><button class="btn btn-blog">klik</button></a>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./image/fortuner-gr_0.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3>SUV</h3>
+                                <a href="./mobil/fortuner.html"><button class="btn btn-blog">klik</button></a>
+                                <span>-</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer-->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                <p>Copyright &copy;MobilRentalan</p>
+            </h4>
+        </div>
+        <div class="waktu">
+            <h4 align="center" id="tanggal" ></h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- Jquery file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+     <!-- owl carousel -->
+     <script src="./js/owl.carousel.min.js"></script>
+    <!-- js file -->
+    <script src="./js/main.js"></script>
+    <script>
+        var tgl = new Date();
+        document.getElementById("tanggal").innerHTML = "waktu akses "+tgl;
+        window.setTimeout("waktu()", 1000);
+        function waktu(){
+            var waktu = new Date();
+            setTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = waktu.getHours();
+            document.getElementById("menit").innerHTML = waktu.getMinutes();
+            document.getElementById("detik").innerHTML = waktu.getSeconds();
+        }
+    </script>
+</body>
+</html>

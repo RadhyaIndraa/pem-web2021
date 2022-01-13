@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mobil Rentalan</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="./index.html" class="text-gray">Mobil Rentalan</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-item">
+                    <li class="nav-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./produk.html">Produk</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./php/bukutamu.php">Buku Tamu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://www.facebook.com/radya.indra.7"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/indraradhya/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/channel/UCpDleXg0XqNaPxomL2cQaLw"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- MAIN -->
+    <!-- site title -->
+    <main>
+        <section class="judul">
+            <h1>tentang mobilrentalan</h1>
+        </section>
+        <section class="about">
+            <div>
+                <p>Selamat datang di Mobil Rentalan, pusat penyewaan mobil.</p>
+                <p>Mobil Rentalan adalah salah satu komunitas penyedia jasa rental mobil. Maraknya bisnis sewa mobil guna memenuhkan kebutuhan transportasi yang terus meningkat merupakan sebuah usaha yang cukup menjanjikan. Dengan dasar itu kami berusaha bersama-sama untuk saling mengisi dan melengkapi akan kebutuhan sarana jasa sewa mobil untuk anda. Dan untuk menunjang kebutuhan sarana transportasi yang baik dan layak, kami menyediakan kendaraan sewa terbaru, bersih dan terawat, untuk berbagai keperluan anda baik perjalanan dalam kota maupun luar kota.</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- footer-->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                <p>Copyright &copy;MobilRentalan</p>
+            </h4>
+        </div>
+        <div class="waktu">
+            <h4 align="center" id="tanggal" ></h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+
+    <!-- Jquery file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+     <!-- owl carousel -->
+     <script src="./js/owl.carousel.min.js"></script>
+    <!-- js file -->
+    <script src="./js/main.js"></script>
+    <script>
+        var tgl = new Date();
+        document.getElementById("tanggal").innerHTML = "waktu akses "+tgl;
+        window.setTimeout("waktu()", 1000);
+        function waktu(){
+            var waktu = new Date();
+            setTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = waktu.getHours();
+            document.getElementById("menit").innerHTML = waktu.getMinutes();
+            document.getElementById("detik").innerHTML = waktu.getSeconds();
+        }
+    </script>
+</body>
+</html>

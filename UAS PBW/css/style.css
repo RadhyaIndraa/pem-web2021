@@ -1,0 +1,266 @@
+@import url(../css/fonts.css);
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root{
+    /* font family */
+    --Abel:'Abel',curcive;
+    --Anton:'Anton',curcive;
+    --Josefin:'Josefin',curcive;
+    --Lexend:'Lexend',curcive;
+}
+
+/* global classes */
+a{
+    text-decoration: none;
+    color: white;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    font-family: var(--Lexend);
+    font-size: 2rem;
+}
+h2{
+    font-family: var(--Lexend);
+}
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Anton);
+    cursor: pointer;
+}
+span{
+    font-family: var(--Abel);
+}
+.container{
+    margin: 0 5vw;
+}
+
+/* navbar */
+.nav{
+    background: rgb(175, 175, 175);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .nav.toggle-collapse, .toggle-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2rem 0;
+}
+.nav .nav.toggle-collapse, .toggle-icon i{
+    font-size: 1.4rem;
+    color: black;
+}
+.collapse{
+    height: 22rem;
+}
+.nav .nav-item{
+    display: flex;
+    margin: 0;
+}
+.nav .nav-item .nav-link{
+    padding: 1.0rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+.nav .nav-item .nav-link:hover{
+    background-color: darkcyan;
+}
+.nav .nav-item .nav-link:hover a{
+    color: black;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Josefin);
+    font-size: 1.6rem;
+}
+.nav .social{
+    padding: 1.2rem 0;
+}
+.nav .social i{
+    padding: 0 .2rem;
+}
+.nav .social i:hover{
+    color: darkcyan;
+}
+
+/* Main content */
+/* site tittle */
+main .site-tittle{
+    background: url(../image/ruffa-jane-reyes-dlGhQPIstkQ-unsplash.jpg);
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-tittle, .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: black;
+}
+main .site-tittle h1, h3{
+    margin: 1rem;
+}
+main .site-tittle .btn{
+    margin: 1.8rem;
+    background: skyblue;
+}
+main .site-tittle .btn:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+/* main about */
+main .judul{
+    text-align: center;
+    color: black;
+    font-family: var(--Josefin);
+}
+main .about{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 325px;
+    text-align: center;
+    font-family: var(--Lexend);
+}
+/* main product */
+.tipe{
+    background: white;
+    padding-top: 2rem;
+    height: 800px;
+}
+.mobil{
+    display: flexbox;
+    background: #fcfcfc;
+    padding: 12px;
+    width: 300px;
+    float: left;
+    margin: 2rem 3rem;
+    height: 300px;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.car-title{
+    padding: 2rem 0;
+}
+.mobil .btn-blog{
+    padding: .7rem 2rem;
+    background: cornflowerblue;
+    margin: .5rem;
+}
+/* main mobil */
+table {
+    border-collapse: collapse;
+    width: 65%;
+    margin: 2rem;
+}
+
+/* carousel */
+main .blog{
+    background: white;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 65%;
+}
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: cornflowerblue;
+    margin: .5rem;
+}
+main .blog-content span{
+    display: block;
+}
+section .container .owl-nav{
+    position: absolute;
+    bottom: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* footer */
+footer.footer{
+    height: 100%;
+    background: black;
+    position: relative;
+}
+footer.footer, .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .rights h4 a{
+    color: white;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: darkgrey;
+}
+
+footer.footer, .move-up span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*  */
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-item{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
